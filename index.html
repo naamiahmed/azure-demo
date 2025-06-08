@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Azure Static Web Apps Demo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(120deg, #0072ff, #00c6ff);
+      color: white;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      padding: 100px 20px;
+      text-align: center;
+      animation: fadeIn 2s ease;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .btn {
+      margin-top: 30px;
+      padding: 12px 25px;
+      background: white;
+      color: #0072ff;
+      font-weight: bold;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #f0f0f0;
+    }
+
+    section {
+      padding: 70px 20px;
+      background: white;
+      color: #333;
+      text-align: center;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    section p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    footer {
+      background: #1a1a1a;
+      padding: 25px 20px;
+      text-align: center;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Azure Static Web Apps Demo</h1>
+    <p>Learn how to deploy modern static websites using Azure Static Web Apps — fast, easy, and scalable hosting with GitHub integration.</p>
+    <button class="btn" onclick="scrollToContent()">See More</button>
+  </header>
+
+  <section id="content">
+    <h2>What You’ll Learn</h2>
+    <p>
+      In this session, we’ll explore how to build and deploy a static website using HTML, CSS, and JavaScript — all hosted on Azure Static Web Apps. 
+      We’ll walk through the GitHub workflow, setting up the Azure resource, and understanding the benefits of serverless hosting.
+      This is a hands-on beginner-friendly demo to help you get started with cloud web deployment.
+    </p>
+  </section>
+
+  <footer>
+    © 2025 Naami Ahmed — Demo for Azure Static Web Apps Session
+  </footer>
+
+  <script>
+    function scrollToContent() {
+      document.getElementById('content').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
